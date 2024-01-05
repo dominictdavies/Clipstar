@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipstar"
+version = "0.1.0"
+description = "A tool for automated video clip management and archival to YouTube"
+authors = [{name = "Dominic Davies", email = "dominictdavies@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+
+[project.urls]
+Home = "https://github.com/dominictdavies/Clipstar"
+
+[project.scripts]
+clipstar = "clipstar.main:main"
