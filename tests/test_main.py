@@ -2,8 +2,8 @@
 This module tests all of main.py's functions
 """
 
-from clipstar.main import *
 import pytest
+from clipstar.main import string_recogniser, main
 
 
 def test_string_recogniser_string():

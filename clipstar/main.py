@@ -7,7 +7,7 @@ and begins the command line interfacing.
 
 def string_recogniser(string):
     """Verifies if input is a string and appends a specific phrase to it."""
-    if type(string) != str:
+    if not isinstance(string, str):
         raise TypeError()
 
     return string + " <- That's a string!"
