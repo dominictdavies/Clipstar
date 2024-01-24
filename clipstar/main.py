@@ -1,11 +1,20 @@
+"""
+This module is the main entry point of Clipstar.
+
+Initialises the application, sets up necessary configurations,
+and begins the command line interfacing.
+"""
+
 def string_recogniser(string):
-    if type(string) != str:
+    """Verifies if input is a string and appends a specific phrase to it."""
+    if not isinstance(string, str):
         raise TypeError()
 
     return string + " <- That's a string!"
 
 
 def main():
+    """Main entry point of Clipstar."""
     print("Hello world!")
 
 
