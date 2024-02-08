@@ -1,5 +1,5 @@
 """
-This module tests all of main.py's functions
+This module tests all of main.py's functions.
 """
 
 import pytest
