@@ -12,7 +12,12 @@ def execute_options(module = ""):
     """Allows alteration of Clipstar's options."""
     print(f"options {module}")
 
+def execute_clear():
+    """Clears all the history in the console."""
+    print("clear")
+
 commands = {
     "help": execute_help,
     "options": execute_options,
+    "clear": execute_clear,
 }
