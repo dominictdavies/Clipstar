@@ -5,6 +5,7 @@ Initialises the application, sets up necessary configurations,
 and begins the command line interfacing.
 """
 
+
 def string_recogniser(string):
     """Verifies if input is a string and appends a specific phrase to it."""
     if not isinstance(string, str):
