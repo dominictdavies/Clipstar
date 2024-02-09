@@ -4,8 +4,8 @@ This module is used for interfacing with Clipstar through the command line.
 
 """
 
-def execute_help(subject):
-    """Prints usage to the console."""
+def execute_help(subject = ""):
+    """Prints information about Clipstar's modules or commands."""
     print(f"help {subject}")
 
 def execute_options(module = ""):
