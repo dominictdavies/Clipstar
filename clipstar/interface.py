@@ -16,8 +16,13 @@ def execute_clear():
     """Clears all the history in the console."""
     print("clear")
 
+def execute_exit():
+    """Exits Clipstar."""
+    print("exit")
+
 commands = {
     "help": execute_help,
     "options": execute_options,
     "clear": execute_clear,
+    "exit": execute_exit,
 }
