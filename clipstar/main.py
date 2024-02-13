@@ -5,18 +5,26 @@ Initialises the application, sets up necessary configurations,
 and begins the command line interfacing.
 """
 
+import sys
 
-def string_recogniser(string):
-    """Verifies if input is a string and appends a specific phrase to it."""
-    if not isinstance(string, str):
-        raise TypeError()
 
-    return string + " <- That's a string!"
+def exit_clipstar(is_cursor_inline=False):
+    """Prints an exit message then exits Clipstar."""
+    if is_cursor_inline:
+        print()
+
+    print("Exiting...")
+    sys.exit()
 
 
 def main():
     """Main entry point of Clipstar."""
-    print("Hello world!")
+    try:
+        while True:
+            input("Clipstar> ")
+
+    except KeyboardInterrupt:
+        exit_clipstar(is_cursor_inline=True)
 
 
 if __name__ == "__main__":
